@@ -140,5 +140,165 @@ items = credit_records.item
 # Display results
 print(location)
 ```
+* ##### **Exercise:** More column selection mistakes
+```python
+# Use info() to inspect mpr
+print(mpr.info())
+
+# Use info() to inspect mpr
+print(mpr.info())
+
+# The following code contains one or more errors
+# Correct the mistakes in the code so that it runs without errors
+
+# Select column "Dog Name" from mpr
+name = mpr.loc[:,"Dog Name"]
+
+# Select column "Missing?" from mpr
+is_missing = mpr.loc[:, 'Missing?']
+
+# Display the columns
+print(name)
+print(is_missing)
+```
+* ##### **Exercise:** Logical testing
+```python
+# Is height_inches greater than 70 inches?
+print(height_inches > 70)
+
+# Is height_inches greater than 70 inches?
+print(height_inches > 70)
+
+# Is plate1 equal to "FRQ123"?
+print(plate1 == "FRQ123")
+
+# Is height_inches greater than 70 inches?
+print(height_inches > 70)
+
+# Is plate1 equal to "FRQ123"?
+print(plate1 == "FRQ123")
+
+# Is fur_color not equal to "brown"?
+print(fur_color != "brown")
+```
+* ##### **Exercise:** Selecting missing puppies
+```python
+# Select the dogs where Age is greater than 2
+greater_than_2 = mpr[mpr.loc[:,'Age'] > 2]
+print(greater_than_2)
+
+# Select the dogs whose Status is equal to Still Missing
+still_missing = mpr[mpr.loc[:,'Status'] == 'Still Missing']
+print(still_missing)
+
+# Select all dogs whose Dog Breed is not equal to Poodle
+not_poodle = mpr[mpr.loc[:,'Dog Breed'] != 'Poodle']
+print(not_poodle)
+```
+* ##### **Exercise:** Narrowing the list of suspects
+```python
+# Select purchases from 'Pet Paradise'
+purchase = credit_records[credit_records.loc[:,'location'] == 'Pet Paradise']
+
+# Display
+print(purchase)
+```
 ### 3. Plotting Data with matplotlib
+* ##### **Exercise:** Working hard
+```python
+# From matplotlib, import pyplot under the alias plt
+from matplotlib import pyplot as plt
+
+# From matplotlib, import pyplot under the alias plt
+from matplotlib import pyplot as plt
+
+# Plot Officer Deshaun's hours_worked vs. day_of_week
+plt.plot(deshaun.loc[:,'day_of_week'], deshaun.loc[:,'hours_worked'])
+plt.show()
+
+# From matplotlib, import pyplot under the alias plt
+from matplotlib import pyplot as plt
+
+# Plot Officer Deshaun's hours_worked vs. day_of_week
+plt.plot(deshaun.day_of_week, deshaun.hours_worked)
+
+# Display Deshaun's plot
+plt.show()
+```
+* ##### **Exercise:** Or hardly working?
+```python
+# Plot Officer Deshaun's hours_worked vs. day_of_week
+plt.plot(deshaun.day_of_week, deshaun.hours_worked)
+
+# Plot Officer Aditya's hours_worked vs. day_of_week
+plt.plot(aditya.day_of_week, aditya.hours_worked)
+
+# Plot Officer Mengfei's hours_worked vs. day_of_week
+plt.plot(mengfei.day_of_week, mengfei.loc[:,'hours_worked'])
+
+# Display all three line plots
+plt.show()
+```
+* ##### **Exercise:** Adding a legend
+```python
+# Add a label to Deshaun's plot
+plt.plot(deshaun.loc[:,'day_of_week'], deshaun.loc[:,'hours_worked'], label = 'Deshaun')
+
+# Officer Aditya
+plt.plot(aditya.loc[:,'day_of_week'], aditya.loc[:,'hours_worked'])
+
+# Officer Mengfei
+plt.plot(mengfei.day_of_week, mengfei.hours_worked)
+
+# Display plot
+plt.show()
+
+
+# Officer Deshaun
+plt.plot(deshaun.day_of_week, deshaun.hours_worked, label='Deshaun')
+
+# Add a label to Aditya's plot
+plt.plot(aditya.day_of_week, aditya.hours_worked, label = 'Aditya')
+
+# Add a label to Mengfei's plot
+plt.plot(mengfei.day_of_week, mengfei.hours_worked, label = 'Mengfei')
+
+# Display plot
+plt.show()
+
+
+
+# Officer Deshaun
+plt.plot(deshaun.day_of_week, deshaun.hours_worked, label='Deshaun')
+
+# Add a label to Aditya's plot
+plt.plot(aditya.day_of_week, aditya.hours_worked, label='Aditya')
+
+# Add a label to Mengfei's plot
+plt.plot(mengfei.day_of_week, mengfei.hours_worked, label='Mengfei')
+
+# Add a command to make the legend display
+plt.legend()
+
+# Display plot
+plt.show()
+```
+* ##### **Exercise:** Adding labels
+```python
+# Lines
+plt.plot(deshaun.day_of_week, deshaun.hours_worked, label='Deshaun')
+plt.plot(aditya.day_of_week, aditya.hours_worked, label='Aditya')
+plt.plot(mengfei.day_of_week, mengfei.hours_worked, label='Mengfei')
+
+# Add a title
+plt.title('Work hours in a week')
+
+# Add y-axis label
+plt.ylabel('hours worked')
+
+# Legend
+plt.legend()
+# Display plot
+plt.show()
+```
 ### 4. Different Types of Plots
