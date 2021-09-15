@@ -75,14 +75,14 @@ plt.show()
 # Define plate to represent a plate beginning with FRQ
 # Use * to represent the missing four letters
 plate = 'FRQ****'
----
+----
 # Define plate to represent a plate beginning with FRQ
 # Use * to represent the missing four letters
 plate = 'FRQ****'
 
 # Call the function lookup_plate()
 lookup_plate(plate)
----
+----
 # Define plate to represent a plate beginning with FRQ
 # Use * to represent the missing four letters
 plate = 'FRQ****'
@@ -144,7 +144,7 @@ print(location)
 ```python
 # Use info() to inspect mpr
 print(mpr.info())
----
+----
 # Use info() to inspect mpr
 print(mpr.info())
 
@@ -165,13 +165,13 @@ print(is_missing)
 ```python
 # Is height_inches greater than 70 inches?
 print(height_inches > 70)
----
+----
 # Is height_inches greater than 70 inches?
 print(height_inches > 70)
 
 # Is plate1 equal to "FRQ123"?
 print(plate1 == "FRQ123")
----
+----
 # Is height_inches greater than 70 inches?
 print(height_inches > 70)
 
@@ -208,14 +208,14 @@ print(purchase)
 ```python
 # From matplotlib, import pyplot under the alias plt
 from matplotlib import pyplot as plt
----
+----
 # From matplotlib, import pyplot under the alias plt
 from matplotlib import pyplot as plt
 
 # Plot Officer Deshaun's hours_worked vs. day_of_week
 plt.plot(deshaun.loc[:,'day_of_week'], deshaun.loc[:,'hours_worked'])
 plt.show()
----
+----
 # From matplotlib, import pyplot under the alias plt
 from matplotlib import pyplot as plt
 
@@ -252,7 +252,7 @@ plt.plot(mengfei.day_of_week, mengfei.hours_worked)
 
 # Display plot
 plt.show()
----
+----
 # Officer Deshaun
 plt.plot(deshaun.day_of_week, deshaun.hours_worked, label='Deshaun')
 
@@ -264,7 +264,7 @@ plt.plot(mengfei.day_of_week, mengfei.hours_worked, label = 'Mengfei')
 
 # Display plot
 plt.show()
----
+----
 # Officer Deshaun
 plt.plot(deshaun.day_of_week, deshaun.hours_worked, label='Deshaun')
 
@@ -341,7 +341,7 @@ plt.legend()
 
 # Display the plot
 plt.show()
----
+----
 # Change the style to ggplot
 plt.style.use('ggplot')
 
@@ -355,7 +355,7 @@ plt.legend()
 
 # Display the plot
 plt.show()
----
+----
 # Choose any of the styles
 plt.style.use('seaborn')
 
@@ -381,7 +381,7 @@ plt.plot(ransom.loc[:,'letter'], ransom.loc[:,'frequency'],
 
 # Display the plot
 plt.show()
----
+----
 # Plot each line
 plt.plot(ransom.letter, ransom.frequency,
          label='Ransom', linestyle=':', color='gray')
@@ -393,7 +393,7 @@ plt.plot(suspect1.loc[:,'letter'], suspect1.loc[:,'frequency'], label='Fred Freq
 
 # Display the plot
 plt.show()
----
+----
 # Plot each line
 plt.plot(ransom.letter, ransom.frequency,
          label='Ransom', linestyle=':', color='gray')
@@ -407,7 +407,7 @@ plt.plot(suspect2.loc[:,'letter'], suspect2.loc[:, 'frequency'], label = 'Gertru
 
 # Display plot
 plt.show()
----
+----
 # Plot each line
 plt.plot(ransom.letter, ransom.frequency,
          label='Ransom', linestyle=':', color='gray')
@@ -452,7 +452,7 @@ plt.xlabel('Longitude')
 
 # Display the plot
 plt.show()
----
+----
 # Change the marker shape to square
 plt.scatter(cellphone.x, cellphone.y,
            color='red',
@@ -464,7 +464,7 @@ plt.xlabel('Longitude')
 
 # Display the plot
 plt.show()
----
+----
 # Change the transparency to 0.1
 plt.scatter(cellphone.x, cellphone.y,
            color='red',
@@ -482,7 +482,7 @@ plt.show()
 ```python
 # Display the DataFrame hours using print
 print(hours)
----
+----
 # Display the DataFrame hours using print
 print(hours)
 
@@ -492,7 +492,7 @@ plt.bar(hours.loc[:,'officer'], hours.avg_hours_worked)
 
 # Display the plot
 plt.show()
----
+----
 # Display the DataFrame hours using print
 print(hours)
 
@@ -513,7 +513,7 @@ label = "Desk Work")
 plt.title('Desk Work')
 # Display the plot
 plt.show()
----
+----
 # Plot the number of hours spent on desk work
 plt.bar(hours.officer, hours.desk_work, label='Desk Work')
 
@@ -538,7 +538,7 @@ plt.ylabel('Number of Puppies')
 
 # Display
 plt.show()
----
+----
 # Change the number of bins to 50
 plt.hist(puppies.weight,
         bins=50)
@@ -549,7 +549,7 @@ plt.ylabel('Number of Puppies')
 
 # Display
 plt.show()
----
+----
 # Change the range to start at 5 and end at 35
 plt.hist(puppies.weight,range=(5,35))
 
@@ -567,14 +567,14 @@ plt.hist(gravel.loc[:,'radius'])
 
 # Display histogram
 plt.show()
----
+----
 # Create a histogram
 # Range is 2 to 8, with 40 bins
 plt.hist(gravel.radius, bins=40, range=(2,8))
 
 # Display histogram
 plt.show()
----
+----
 # Create a histogram
 # Normalize to 1
 plt.hist(gravel.radius,
@@ -584,7 +584,7 @@ plt.hist(gravel.radius,
 
 # Display histogram
 plt.show()
----
+----
 # Create a histogram
 plt.hist(gravel.radius,
          bins=40,
