@@ -1,4 +1,3 @@
-# CodeWars Python Solution Keys
 ## Primes in numbers
 **Instructions**
 
